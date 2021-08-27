@@ -1,0 +1,57 @@
+<div class="row">
+  <div class="col-md-auto">
+    <div class="row" style="padding: 1em;">
+      <div class="col">
+        <h3 style="padding: 0px;">Year</h3>
+        <select
+          class="year-options w3-round"
+          onchange="update_category()"
+          name="Year"
+          id="year-selector"
+        >
+          <!-- Add new year options here-->
+          <!--
+                    <option class="w3-round-xlarge" value="2023">2023</option>
+                    <option class="w3-round-xlarge" value="2022">2022</option>
+                    -->
+          <option class="w3-round-xlarge" value="2021">2021</option>
+          <option class="w3-round-xlarge" value="2020">2020</option>
+          <option class="w3-round-xlarge" value="2019">2019</option>
+          <option class="w3-round-xlarge" value="2018">2018</option>
+          <option class="w3-round-xlarge" value="2017">2017</option>
+          <option class="w3-round-xlarge" value="2016">2016</option>
+          <option class="w3-round-xlarge" value="2015">2015</option>
+          <option class="w3-round-xlarge" value="2014">2014</option>
+          <option class="w3-round-xlarge" value="2013">2013</option>
+          <option class="w3-round-xlarge" value="2012">2012</option>
+        </select>
+      </div>
+      <hr />
+    </div>
+    <div class="row" style="padding: 1em;">
+      <div class="col">
+        <h3 style="padding: 0px;">Category</h3>
+        <select
+          class="category-options w3-round"
+          name="Category"
+          id="category-selector"
+        >
+        </select>
+      </div>
+    </div>
+    <div class="row" style="padding: 1em;">
+      <div class="col">
+        <button
+          class="w3-button"
+          type="button"
+          name="button"
+          onclick="filteritems()"
+        >
+          Filter
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col" style="padding: 1.5em;" id="items">
+  </div>
+</div>
